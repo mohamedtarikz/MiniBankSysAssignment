@@ -25,6 +25,13 @@ int main() {
             cin>>name;
             cout<<"Password: ";
             cin>>pass;
+            cout<<"Initial Deposit: ";
+            cin>>balance;
+            while(balance < 100){
+                cout<<"Initial deposit must not be less than $100"<<endl;
+                cout<<"Initial Deposit: ";
+                cin>>balance;
+            }
             cout<<"Age: ";
             cin>>age;
         }
